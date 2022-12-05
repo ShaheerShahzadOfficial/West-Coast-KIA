@@ -1,0 +1,289 @@
+.Hero {
+  background-image: url("../../images/bg1 1.png");
+  height: 100vmin;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Hero > img {
+  width: 80%;
+  height: 100%;
+}
+.Hero > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  width: 60%;
+  margin-left: -30%;
+  z-index: 10000;
+}
+.Hero > div > h1 {
+  font-size: x-large;
+}
+
+.Hero > div > p {
+  font-size: x-large;
+  width: 100%;
+  text-align: center;
+}
+.Hero > div > button {
+  width: 38%;
+  border-radius: 30px;
+  border: 4px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 1vmax;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+}
+.vehicle > h2 {
+  font-size: large;
+}
+.achievement {
+  display: flex;
+  min-height: 50vmin;
+  align-items: center;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.score {
+  font-size: 2vmax;
+  width: 33%;
+}
+.score > h2 {
+  font-size: 200%;
+}
+
+.vehiclesContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.vehiclesContainer > img {
+  width: 30vmax;
+  margin: 4vmax;
+}
+
+.vehiclesContainer > img:hover {
+  border: 2px solid black;
+}
+
+.vehiclesContainer::-webkit-scrollbar {
+  width: 1.4vmax;
+  height: 1vmax;
+  /* display: none; */
+}
+
+.vehiclesContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.774);
+  border-radius: 30px;
+}
+
+.vehiclesContainer::-webkit-scrollbar-thumb {
+  background: rgb(85, 85, 85);
+  border-radius: 100px;
+  height: 4vmax;
+}
+
+.Service {
+  margin-top: 1vmax;
+  min-height: 80vmin;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Service > h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 4vmax ;
+}
+.Service > img {
+  width: 80%;
+  height: 100%;
+}
+
+.ContactUs {
+  margin: 4vmax;
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  margin: auto;
+}
+
+.ContactForm > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ContactForm > div > input {
+  width: 70%;
+  padding: 1vmax;
+  font-size: larger;
+  margin: 1vmax;
+  background-color: #efefef;
+  color: #707071;
+  border: none;
+  outline: none;
+}
+.ContactForm > div > textarea {
+  width: 70%;
+  padding: 1vmax;
+  font-size: x-large;
+  margin: 1vmax;
+  background-color: #efefef;
+  color: #707071;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 6vmax;
+}
+.ContactForm > div > button {
+  width: 40%;
+  padding: 1vmax;
+  font-size: larger;
+  margin: 1vmax;
+  background-color: #efefef;
+  color: #707071;
+  border: none;
+  outline: none;
+}
+.Contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Contact > img {
+  width: 100%;
+}
+.Contact > div > p {
+  font-size: larger;
+  width: 80%;
+  margin: auto;
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 29.25%;
+  position: relative;
+  height: 0;
+}
+.responsive-map > iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 770px) {
+  .Hero > img {
+    width: 80%;
+    height: 70%;
+  }
+
+  .Hero > div > h1 {
+    font-size: large;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+  }
+
+  .Hero > div > p {
+    font-size: medium;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vmax;
+    color: rgb(255, 255, 255);
+  }
+  .Hero > div > button {
+    width: 80%;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border-color: rgb(255, 255, 255);
+    background-color: white;
+    position: relative;
+    font-size: 1.4vmax;
+  }
+  .vehicle > h2 {
+    font-size: small;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 2vmax;
+  }
+  .vehiclesContainer > img {
+    width: 30vmax;
+    margin: 3vmax;
+  }
+  .Service {
+    margin-top: 1vmax;
+    height: 50vmin;
+    background-color: #f1f1f1;
+  }
+  .Service > img {
+    width: 80%;
+    height: 80%;
+  }
+  .ContactForm {
+    flex-direction: column;
+  }
+  .ContactForm > div {
+    align-items: center;
+    justify-content: center;
+  }
+  .ContactForm > div > input {
+    width: 100%;
+    padding: 2vmax;
+  }
+  .ContactForm > div > textarea {
+    width: 100%;
+    padding: 2vmax;
+    height: 10vmax;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  .Contact > img {
+    margin-top: 2vmax;
+    width: 100%;
+    height: 20vmax;
+  }
+  .Contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Contact > div > p {
+    font-size: larger;
+    width: 80%;
+    margin: auto;
+  }
+
+  .responsive-map {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+  }
+  .responsive-map > iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
